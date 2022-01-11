@@ -83,23 +83,7 @@ h1, h2, h3, h4, h5, h6 {
         top: 0;
         width: 100%;
         z-index: 99;
-}
-
-.header::before{
-     content: "";
-     position: absolute;
-     left: 0;
-     top: 0;
-     height: 100%;
-     width: 100%;
-     z-index: -1;
-     background:var(--main-color);
-     transition: transform 0.5s ease;
-     transform: translateY(-100%);
-}
-
-.header.sticky::before{
-transform: translateY(0%);
+        background: var(--main-color);
 }
 
 .header .navbar-brand{
